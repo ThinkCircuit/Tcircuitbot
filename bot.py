@@ -264,5 +264,5 @@ async def 씨발(ctx):
 async def 게이야(ctx):
     await ctx.channel.send(f'{ctx.message.author.mention} 게이는 제가 아니라 전승주에요!')
 
-access_token = os.environ["TOKEN"]
+access_token = os.environ['TOKEN']
 client.run(access_token)
