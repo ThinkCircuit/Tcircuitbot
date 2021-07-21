@@ -1,10 +1,7 @@
-import os
-
 import discord
 from discord.ext import commands
 
 bot = commands.Bot(command_prefix='!!')
-TOKEN = 'ODY1OTcyNDY2MzkyMjM2MDYz.YPLxtA.XdBGwuD9ZA9Z2Tb03GvcTP8fEyA'
 
 hogam = '0'
 goback = '0'
@@ -267,4 +264,5 @@ async def 씨발(ctx):
 async def 게이야(ctx):
     await ctx.channel.send(f'{ctx.message.author.mention} 게이는 제가 아니라 전승주에요!')
 
-bot.run(TOKEN)
+access_token = os.environ["TOKEN"]
+client.run(access_token)
